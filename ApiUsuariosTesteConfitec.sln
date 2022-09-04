@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUsuariosTesteConfitec", "ApiUsuariosTesteConfitec\ApiUsuariosTesteConfitec.csproj", "{79FBAFD3-83E4-489C-9455-1D92078C1B10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{EE17171B-88A8-4F39-B2D4-9D8A393257DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9C3ABFBC-8313-4ABA-BF5A-288C9306CB56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUsuariosTesteConfitec_Domain", "ApiUsuariosTesteConfitec_Domain\ApiUsuariosTesteConfitec_Domain.csproj", "{7AD1FF61-6C70-4265-8F19-CBB16536AB34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{32BD87C5-2D16-4547-9946-11005E886A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUsuariosTesteConfitec_Data", "ApiUsuariosTesteConfitec_Data\ApiUsuariosTesteConfitec_Data.csproj", "{FAC0BB05-895B-4ED5-B234-E883DBB02406}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{97E74FAF-694D-4444-A6DF-05F303EAE67D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUsuariosTesteConfitec_Business", "ApiUsuariosTesteConfitec_Business\ApiUsuariosTesteConfitec_Business.csproj", "{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79FBAFD3-83E4-489C-9455-1D92078C1B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FBAFD3-83E4-489C-9455-1D92078C1B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FBAFD3-83E4-489C-9455-1D92078C1B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FBAFD3-83E4-489C-9455-1D92078C1B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD1FF61-6C70-4265-8F19-CBB16536AB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD1FF61-6C70-4265-8F19-CBB16536AB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD1FF61-6C70-4265-8F19-CBB16536AB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD1FF61-6C70-4265-8F19-CBB16536AB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC0BB05-895B-4ED5-B234-E883DBB02406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC0BB05-895B-4ED5-B234-E883DBB02406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC0BB05-895B-4ED5-B234-E883DBB02406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC0BB05-895B-4ED5-B234-E883DBB02406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79FBAFD3-83E4-489C-9455-1D92078C1B10} = {EE17171B-88A8-4F39-B2D4-9D8A393257DF}
+		{7AD1FF61-6C70-4265-8F19-CBB16536AB34} = {9C3ABFBC-8313-4ABA-BF5A-288C9306CB56}
+		{FAC0BB05-895B-4ED5-B234-E883DBB02406} = {32BD87C5-2D16-4547-9946-11005E886A2D}
+		{F227BAF5-1A0E-4E38-9CA3-AE6006C6E276} = {97E74FAF-694D-4444-A6DF-05F303EAE67D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A22AE01D-17D8-42B2-ADEC-256B1FB50603}
+	EndGlobalSection
+EndGlobal
