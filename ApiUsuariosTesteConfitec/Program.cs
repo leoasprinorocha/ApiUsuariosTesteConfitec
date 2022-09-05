@@ -17,10 +17,18 @@ namespace ApiUsuariosTesteConfitec
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+             Host.CreateDefaultBuilder(args)
+                 .ConfigureWebHostDefaults(webBuilder =>
+                 {
+                     webBuilder.UseStartup<Startup>();
+                     var portExists = int.TryParse(Environment.GetEnvironmentVariable("PORT"), out var port);
+                     if (portExists)
+                     {
+                         webBuilder.ConfigureKestrel(options =>
+                         {
+                             options.ListenAnyIP(port);
+                         });
+                     }
+                 });
     }
 }

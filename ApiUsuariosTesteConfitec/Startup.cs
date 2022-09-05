@@ -20,6 +20,8 @@ namespace ApiUsuariosTesteConfitec
 
         public IConfiguration Configuration { get; }
 
+        public string MyAllowSpecificOrigins = "mycors";
+
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -35,18 +37,17 @@ namespace ApiUsuariosTesteConfitec
 
             services.AddCors(options =>
             {
-                options.AddPolicy("EnableCORS", builder =>
-                {
-                    builder.AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("https://frontend-usuarios-teste-confitec-1nhyv49s0-leoasprinorocha.vercel.app/");
+                                  });
             });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseCors("EnableCORS");
+            app.UseCors(MyAllowSpecificOrigins);
 
             if (env.IsDevelopment())
             {
@@ -56,6 +57,9 @@ namespace ApiUsuariosTesteConfitec
             }
 
             app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
